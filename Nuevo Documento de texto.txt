@@ -1,0 +1,73 @@
+* Cambiarse a unidad T                t:
+* Crear Carpeta (DEMO-ADMIN)          mkdir DEMO-ADMIN
+* Crear en torno virtual	      python -m venv .venv
+* Activar entorno virtual	      .\.venv\Scripts\activate
+* Instalar Django		      pip install django
+* Crear Proyecto (config)	      django-admin startproject config .
+* Crear App (shop)                    django-admin startapp shop
+* Crear requeriments.txt              pip freeze > requirements.txt
+* Inicializar repositorio             
+
+code .
+instalar git
+git --verion
+git init
+git config user.name "Pante45"
+git config user.email "alexandro.pantelakos@inacapmail.cl
+* Crear .gitignore   (.venv, __pycache__)                 
+* Realizar Commit                     
+
+
+* Realizar migraciones
+* Crear Usuario  
+* Configurar django admin (es-ES), (America/Santiago)
+* Realizar Commit
+
+
+* Crear modelo de algun tema (al menos 6 atributos de 4 tipos distintos)
+models.py
+
+class "" (models.Model):
+modesl.CharField(max_length=) 		TEXTO CON UN MAX
+models.PositiveIntegerField() 		NUMEROS POSITIVOS
+models.PositiveSmallintergerField()	 
+models.DateField() 			FECHAS
+models.BooleanField()			
+models.TextField() 			TEXTO GRANDE
+
+PARA Q SALGA EL NOMBRE EN LA PAG DEL PRODUCTO
+def __str__(self):
+	return self.nombre
+
+
+
+* Crear migraciones
+.\manage.py makemigrations
+
+* Realizar migraciones
+.\manage.py migrate
+
+* Integrar con Django Admin
+admin.py
+
+from shop.models import ""
+
+admin.site.Register("")
+
+class ""Admin(admin.ModelAdmin):
+
+list_display
+
+* Realizar Commit
+
+
+--------------------------
+REINSTALAR EL PROYECTO
+t:
+git clone "ruta de repositorio"
+cd Carpeta 
+python -m venv .venv
+pip install -r .\requirements.txt
+python manage runserver
+
+
